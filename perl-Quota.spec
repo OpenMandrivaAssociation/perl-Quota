@@ -3,7 +3,7 @@
 Summary:	Quota module for perl 
 Name:		perl-%{real_name}
 Version:	1.5.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD-like
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -24,7 +24,6 @@ according file system.
 
 
 %prep
-
 %setup -q -n %{real_name}-%{version} 
 
 # fix perl path
@@ -36,6 +35,7 @@ find -type f | xargs perl -pi -e "s|/usr/local/bin/perl|%{_bindir}/perl|g"
 
 %make
 
+%check
 #make test
 
 %install
