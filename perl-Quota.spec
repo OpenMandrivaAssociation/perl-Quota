@@ -2,7 +2,7 @@
 
 Summary:	Quota module for perl 
 Name:		perl-%{real_name}
-Version:	1.5.2
+Version:	1.6.0
 Release:	%mkrel 1
 License:	BSD-like
 Group:		Development/Perl
