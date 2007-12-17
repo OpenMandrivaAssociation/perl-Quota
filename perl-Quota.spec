@@ -12,7 +12,6 @@ Requires:	quota
 BuildRequires:	perl-devel
 BuildRequires:	quota
 #BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The Quota module provides access to file system quotas. The quotactl
