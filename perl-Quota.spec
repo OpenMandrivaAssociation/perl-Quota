@@ -3,7 +3,7 @@
 Summary:	Quota module for perl 
 Name:		perl-%{real_name}
 Version:	1.6.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	BSD-like
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
