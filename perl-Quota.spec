@@ -1,13 +1,13 @@
-%define real_name Quota
+%define module Quota
 
 Summary:	Quota module for perl 
-Name:		perl-%{real_name}
-Version:	1.6.2
-Release:	%mkrel 4
+Name:		perl-%{module}
+Version:	1.6.3
+Release:	%mkrel 1
 License:	BSD-like
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/%{real_name}-%{version}.tar.bz2
+URL:		http://search.cpan.org/dist/%{module}
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/%{module}-%{version}.tar.gz
 Requires:	quota
 BuildRequires:	perl-devel
 BuildRequires:	quota
@@ -24,7 +24,7 @@ according file system.
 
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{module}-%{version} 
 
 # fix perl path
 find -type f | xargs perl -pi -e "s|/usr/drwho/local/bin/perl|%{_bindir}/perl|g"
@@ -49,8 +49,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc CHANGES INSTALL README contrib
-%dir %{perl_vendorarch}/auto/Quota
-%{perl_vendorarch}/auto/Quota/*
+%{perl_vendorarch}/auto/Quota
 %{perl_vendorarch}/Quota.pm
 %{_mandir}/*/*
-
