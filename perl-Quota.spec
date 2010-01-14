@@ -1,18 +1,22 @@
-%define module Quota
+%define upstream_name    Quota
+%define upstream_version 1.6.4
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Quota module for perl 
-Name:		perl-%{module}
-Version:	1.6.3
-Release:	%mkrel 2
 License:	BSD-like
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/%{module}-%{version}.tar.gz
-Requires:	quota
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/%{upstream_name}-%{version}.tar.gz
+
 BuildRequires:	perl-devel
 BuildRequires:	quota
-#BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+
+Requires:	quota
 
 %description
 The Quota module provides access to file system quotas. The quotactl
@@ -24,7 +28,7 @@ according file system.
 
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{version}
 
 # fix perl path
 find -type f | xargs perl -pi -e "s|/usr/drwho/local/bin/perl|%{_bindir}/perl|g"
@@ -32,7 +36,6 @@ find -type f | xargs perl -pi -e "s|/usr/local/bin/perl|%{_bindir}/perl|g"
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
