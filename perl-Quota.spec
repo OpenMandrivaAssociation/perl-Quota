@@ -1,15 +1,14 @@
 %define upstream_name    Quota
-%define upstream_version 1.6.6
-
+%define upstream_version 1.6.7
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 1.6.7
+Release:	1
 
 Summary:	Quota module for perl 
 License:	BSD-like
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/%{upstream_name}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/Quota-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	quota
@@ -130,4 +129,5 @@ rm -rf %{buildroot}
 
 * Thu Apr 13 2006 Oden Eriksson <oeriksson@mandriva.com> 1.5.1-1mdk
 - initial Mandriva package
+
 
