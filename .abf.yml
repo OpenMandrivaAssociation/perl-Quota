@@ -1,4 +1,5 @@
 removed_sources:
   Quota-1.6.6.tar.gz: 629003302556ace5b34943a80f8da8763b16a3ec
-sources:
   Quota-1.6.7.tar.gz: b81f4df0f159d2fc807ff403bd4946acdb6a2b4f
+sources:
+  Quota-1.7.0.tar.gz: 237dae8a360560a25511d269fc6361d4c436b732
