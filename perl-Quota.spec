@@ -2,7 +2,7 @@
 %define upstream_version 1.7.1
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Quota module for perl 
 
