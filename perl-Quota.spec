@@ -8,7 +8,7 @@ Summary:	Quota module for perl
 
 License:	BSD-like
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/Quota-%{version}.tar.gz
 
 BuildRequires:	perl-devel
