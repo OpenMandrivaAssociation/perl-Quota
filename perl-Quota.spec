@@ -1,15 +1,15 @@
 %define upstream_name    Quota
-%define upstream_version 1.7.1
+%define upstream_version 1.8.2
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	4
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Quota module for perl 
 
 License:	BSD-like
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOMZO/Quota-%{version}.tar.gz
+Url:		https://github.com/tomzox/Perl-Quota
+Source0:	https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
