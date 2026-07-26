@@ -1,8 +1,7 @@
 %define upstream_name    Quota
-%define upstream_version 1.8.2
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.8.2
+Release:	2
 
 Summary:	Quota module for perl 
 
